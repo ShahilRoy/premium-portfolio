@@ -3,79 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shahil Roy — Premium Portfolio</title>
+  <title>Shahil Roy — Premium Interactive Portfolio</title>
   <meta name="description" content="Aspiring Cybersecurity Analyst | Blockchain Developer (Solidity) | B.Tech, Brainware University | Kolkata, India" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* Full CSS previously provided */
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-content">
+      <div class="logo">Shahil Roy</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certs">Certifications</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header class="hero" id="hero">
+    <div class="hero-content">
       <h1>Shahil Roy</h1>
-      <p class="tagline">Aspiring Cybersecurity Analyst · Blockchain Developer (Solidity) · B.Tech, Brainware University</p>
-      <p class="meta">Kolkata metropolitan area, West Bengal, India</p>
-      <nav class="cta">
-        <a class="btn" href="https://www.linkedin.com/in/shahil-roy-7b22aa323" target="_blank" rel="noopener">Connect on LinkedIn</a>
-      </nav>
+      <p class="tagline">Aspiring Cybersecurity Analyst · Blockchain Developer (Solidity)</p>
+      <p class="meta">B.Tech, Brainware University · Kolkata, West Bengal, India</p>
+      <div class="cta-buttons">
+        <a href="https://www.linkedin.com/in/shahil-roy-7b22aa323" target="_blank" class="btn btn-primary">Connect on LinkedIn</a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
     </div>
   </header>
-
-  <main class="container">
-    <section id="about" class="card">
-      <h2>Summary</h2>
-      <p>I’m a B.Tech student focused on securing digital ecosystems with cybersecurity and blockchain, with certifications in Blockchain Basics and Solidity Smart Contract Development, and projects exploring data encryption and smart contract efficiency. Bridging security gaps, thriving in collaborative teams, and seeking internships in 2025.</p>
-    </section>
-
-    <section id="skills" class="card">
-      <h2>Top Skills</h2>
-      <ul class="pill-list">
-        <li>Network Security</li>
-        <li>Python</li>
-        <li>Data Analysis</li>
-      </ul>
-    </section>
-
-    <section id="certs" class="card">
-      <h2>Certifications</h2>
-      <ul>
-        <li>Solidity Smart Contract Development</li>
-        <li>Getting Started with Threat Intelligence and Hunting</li>
-        <li>Certification: Blockchain Basics</li>
-        <li>OCI AI Foundation Associate 2025</li>
-        <li>Prompt Engineering for ChatGPT</li>
-      </ul>
-    </section>
-
-    <section id="education" class="card">
-      <h2>Education</h2>
-      <ul class="edu">
-        <li>
-          <strong>Brainware University</strong> — B.Tech, Computer Science and Engineering (Cybersecurity) · Aug 2024 – Present
-        </li>
-        <li>
-          <strong>Santinagar High School</strong> — Higher Secondary, Science (Physics, Chemistry, Mathematics, Biology) · Jun 2022 – Mar 2024
-        </li>
-      </ul>
-    </section>
-
-    <section id="contact" class="card">
-      <h2>Contact</h2>
-      <p>Prefer LinkedIn for opportunities, collaborations, and internships.</p>
-      <p>
-        <a class="btn-outline" href="https://www.linkedin.com/in/shahil-roy-7b22aa323" target="_blank" rel="noopener">Open LinkedIn Profile</a>
-      </p>
-    </section>
-  </main>
-
-  <footer class="site-footer container">
-    <small>© <span id="year"></span> Shahil Roy • Built with HTML, CSS & accessibility-friendly semantics</small>
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <p>I'm a B.Tech student focused on securing digital ecosystems with cybersecurity and blockchain technology. With certifications in Blockchain Basics and Solidity Smart Contract Development, I explore data encryption and smart contract efficiency to bridge security gaps. Thriving in collaborative teams and seeking internship opportunities in 2025 to apply my skills and grow my expertise.</p>
+    </div>
+  </section>
+  <section id="skills" class="container">
+    <h2>Top Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>🔐 Network Security</h3>
+      </div>
+      <div class="skill-card">
+        <h3>🐍 Python</h3>
+      </div>
+      <div class="skill-card">
+        <h3>📊 Data Analysis</h3>
+      </div>
+    </div>
+  </section>
+  <section id="certs" class="container">
+    <h2>Certifications</h2>
+    <div class="cert-list">
+      <div class="cert-item">
+        <h3>Solidity Smart Contract Development</h3>
+        <p>Master blockchain development and smart contract security.</p>
+      </div>
+      <div class="cert-item">
+        <h3>Threat Intelligence & Hunting</h3>
+        <p>Advanced cybersecurity threat detection and analysis.</p>
+      </div>
+      <div class="cert-item">
+        <h3>Blockchain Basics</h3>
+        <p>Foundational knowledge of blockchain architecture and applications.</p>
+      </div>
+      <div class="cert-item">
+        <h3>OCI AI Foundation Associate 2025</h3>
+        <p>Oracle Cloud AI and machine learning fundamentals.</p>
+      </div>
+      <div class="cert-item">
+        <h3>Prompt Engineering for ChatGPT</h3>
+        <p>Effective AI prompt design and optimization techniques.</p>
+      </div>
+    </div>
+  </section>
+  <section id="education" class="container">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Brainware University</h3>
+        <p><strong>B.Tech, Computer Science & Engineering (Cybersecurity)</strong></p>
+        <p style="margin-top: 0.3rem;">Aug 2024 – Present</p>
+      </div>
+      <div class="timeline-item">
+        <h3>Santinagar High School</h3>
+        <p><strong>Higher Secondary, Science (Physics, Chemistry, Mathematics, Biology)</strong></p>
+        <p style="margin-top: 0.3rem;">Jun 2022 – Mar 2024</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <h2>Let's Connect</h2>
+      <div class="contact-block">
+        <h3>Ready for opportunities?</h3>
+        <p>I'm open to internships, collaborations, and projects that push the boundaries of cybersecurity and blockchain.</p>
+        <a href="https://www.linkedin.com/in/shahil-roy-7b22aa323" target="_blank" class="btn btn-primary">Message on LinkedIn</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; <span id="year"></span> Shahil Roy. Built with passion for cybersecurity and blockchain innovation.</p>
   </footer>
-
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    document.documentElement.classList.add('ready');
+    const hero = document.getElementById('hero');
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY;
+      hero.style.backgroundPosition = '0 ' + scrollY * 0.5 + 'px';
+    });
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        navbar.classList.add('sticky');
+      } else {
+        navbar.classList.remove('sticky');
+      }
+    });
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+    document.querySelectorAll('section').forEach(el => {
+      observer.observe(el);
+    });
   </script>
 </body>
 </html>
