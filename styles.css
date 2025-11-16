@@ -1,0 +1,82 @@
+/* Premium Portfolio Theme */
+:root {
+  --primary-bg: #232741;
+  --secondary-bg: #191b2a;
+  --accent: #e2b714;
+  --text-main: #f9fafb;
+  --text-muted: #b4b8d4;
+  --card-bg: #282c3c;
+  --border-radius: 18px;
+}
+
+body {
+  background: linear-gradient(135deg, var(--primary-bg) 0%, var(--secondary-bg) 100%);
+  color: var(--text-main);
+  font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  letter-spacing: 0.02rem;
+}
+
+.card, .section {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: 0 8px 32px rgba(32, 40, 80, 0.14), 0 1.5px 10px rgba(226,183,20,0.08);
+  padding: 2.5rem 2rem;
+  margin-bottom: 2.5rem;
+  border: 1.25px solid #1a1d2e;
+  transition: box-shadow 0.18s;
+}
+
+.card:hover, .section:hover {
+  box-shadow: 0 12px 44px rgba(226,183,20,0.09);
+  border-color: var(--accent);
+}
+
+h1, h2, h3 {
+  color: var(--accent); font-weight: 700;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.16s;
+}
+
+a:hover {
+  color: #f6c700;
+  text-decoration: underline;
+}
+
+.btn, .btn-outline {
+  background: var(--accent);
+  color: #232741;
+  border-radius: 12px;
+  padding: 0.7em 1.35em;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(226,183,20,0.08);
+  border: none;
+  transition: box-shadow 0.2s, background 0.16s;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+.site-header {
+  background: linear-gradient(95deg, #311a49 20%, var(--primary-bg) 80%);
+  box-shadow: 0 5px 24px rgba(35,39,65,0.19);
+  padding-bottom: 1.25rem;
+}
+
+.site-footer {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 1.2em 0;
+}
+
+@media (max-width: 600px) {
+  .card, .section { padding: 1.3rem 1em; }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.15rem; }
+}
